@@ -15,7 +15,16 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-
+from apitest import views
+from product import proviews
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('', views.index),
+    path('index/', views.index),
+    path('logout/', views.logout),
+    path('login_action/', views.login_action),
+    path('home/', views.home),
+    path('product_manage/', proviews.product_manage),
+
+
 ]
