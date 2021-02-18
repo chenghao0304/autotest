@@ -25,6 +25,7 @@ urlpatterns = [
     path('login_action/', views.login_action),
     path('home/', views.home),
     path('product_manage/', proviews.product_manage),
-
+    path('apitest_manange/',views.apitest_manage),
+    path('apistep_manange/', views.apistep_manage),
 
 ]
